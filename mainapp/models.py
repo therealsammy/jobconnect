@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, Group, Permission
 
 
 class Skill(models.Model):
@@ -18,6 +18,8 @@ class User(AbstractUser):
     middle_name = models.CharField(max_length=255, blank=True)
     date_of_birth = models.DateField()
     skills = SplitCharField(max_length=255)
+    groups = models.ManyToManyField(Group, related_name='mainapp_users', blank=True)
+    user_permissions = models.ManyToManyField(Permission, related_name='mainapp_users', blank=True)
 
 
 class Experience(models.Model):
