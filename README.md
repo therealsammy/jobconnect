@@ -3,6 +3,12 @@
 ## Team
 [Chidera Nwangwu]()
 [Jules Okato]()
-[Samuel Ohiri](www.github.com/therealsammy)
+[Samuel Ohiri]()
 
 ## Scope
+
+
+## Outline
+
+
+## Guide
